@@ -21,6 +21,7 @@ Add HttpRedisCache to your application's `composer.json` file
         "solilokiam/httprediscache": "dev-master"
     }
 }
+```
 
 Install the library and it's dependencies using the following command:
 ```bash
