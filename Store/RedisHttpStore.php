@@ -183,7 +183,7 @@ class RedisHttpStore implements StoreInterface
 
         $this->client->close();
 
-        return $result;
+        return $result == 1;
     }
 
     /**
@@ -203,7 +203,7 @@ class RedisHttpStore implements StoreInterface
 
         $this->client->close();
 
-        return $result;
+        return $result == 1;
     }
 
     /**
@@ -243,7 +243,7 @@ class RedisHttpStore implements StoreInterface
 
         $this->client->close();
 
-        return $result;
+        return $result == 1;
     }
 
     /**

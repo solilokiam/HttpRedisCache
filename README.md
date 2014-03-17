@@ -152,7 +152,6 @@ Author
 
 TODO
 ----
-- Documentation
-- Tests
+- Improve Tests
 - Symfony 2.4 support
 
