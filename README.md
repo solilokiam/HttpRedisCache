@@ -144,6 +144,9 @@ class AppCache extends HttpCache
 }
 ```
 
+Build Status
+------------
+[![Build Status](https://travis-ci.org/solilokiam/HttpRedisCache.png?branch=master)](https://travis-ci.org/solilokiam/HttpRedisCache)
 
 
 Author
