@@ -17,15 +17,67 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->redisMock = $this->getMock('Redis');
+        $this->redisMock = $this->getMock('\Redis');
     }
 
     public function testSimpleConnect()
     {
         $client = new Client(array('host' => 'localhost'));
 
-        $this->redisMock->expects($this->once())
-            ->method('connect')
-            ->with($this->equalTo('localhost'), $this->equalTo(null));
+        $return = $client->createConnection();
+
+        $this->assertTrue($return);
+    }
+
+    public function testReadWriteKey()
+    {
+        $client = new Client(array('host' => 'localhost'));
+
+        $connection = $client->createConnection();
+
+        $this->assertTrue($connection);
+
+        $client->set('testkey', '1234');
+
+        $result = $client->get('testkey');
+
+        $this->assertEquals('1234', $result);
+
+        $client->del('testkey');
+    }
+
+    public function testDelKey()
+    {
+        $client = new Client(array('host' => 'localhost'));
+
+        $connection = $client->createConnection();
+
+        $this->assertTrue($connection);
+
+        $client->set('testkey', '1234');
+        $client->del('testkey');
+
+        $result = $client->get('testkey');
+
+        $this->assertEquals(false, $result);
+
+
+    }
+
+    public function testHashGet()
+    {
+        $client = new Client(array('host' => 'localhost'));
+
+        $connection = $client->createConnection();
+
+        $this->assertTrue($connection);
+
+        $client->hSetNx('testkey', 'testhash', 1);
+
+        $result = $client->hGet('testkey', 'testhash');
+
+        $this->assertEquals(1, $result);
+
+        $client->del('testkey');
     }
 }
