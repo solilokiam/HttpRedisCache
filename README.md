@@ -28,7 +28,7 @@ Install the library and it's dependencies using the following command:
 $ php composer.phar update solilokiam\httprediscache
 ```
 
-Activate your symfony (internal http cache)[http://symfony.com/doc/current/book/http_cache.html#symfony2-reverse-proxy]:
+Activate your symfony [internal http cache](http://symfony.com/doc/current/book/http_cache.html#symfony2-reverse-proxy):
 ```php
 // web/app.php
 require_once __DIR__.'/../app/bootstrap.php.cache';
