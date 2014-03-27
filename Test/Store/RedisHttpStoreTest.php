@@ -47,7 +47,7 @@ class RedisHttpStoreTest extends \PHPUnit_Framework_TestCase
 
     public function testUnlockThatExists()
     {
-        $cacheKey = $this->storeSimpleEntry();
+        $this->storeSimpleEntry();
         $this->store->lock($this->request);
 
         $this->assertTrue($this->store->unlock($this->request));
