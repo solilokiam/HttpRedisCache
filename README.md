@@ -4,7 +4,7 @@ README
 What is HttpRedisCache?
 -----------------------
 
-Redis Cache is an improvement to Symfony 2 internal http cache. All cached data is stores in Redis instead of filesystem.
+Redis Cache is an improvement to Symfony 2 internal http cache. All cached data is stored in Redis instead of filesystem.
 This can be useful when not much spacedisk is avaliable, or you want to share the cache data across several servers.
 
 Requirements
@@ -147,6 +147,7 @@ class AppCache extends HttpCache
 Build Status
 ------------
 [![Build Status](https://travis-ci.org/solilokiam/HttpRedisCache.png?branch=master)](https://travis-ci.org/solilokiam/HttpRedisCache)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/99d54861-3c70-4cd6-a73d-f1ce31aa8869/mini.png)](https://insight.sensiolabs.com/projects/99d54861-3c70-4cd6-a73d-f1ce31aa8869)
 
 
 Author
