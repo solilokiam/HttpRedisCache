@@ -64,7 +64,7 @@ class RedisHttpStore implements StoreInterface
             return null;
         }
 
-        list($req, $headers) = $match;
+        list($headers) = array_slice($match, 1, 1);
 
         $this->client->createConnection();
         $body = $this->client->get($headers['x-content-digest'][0]);
