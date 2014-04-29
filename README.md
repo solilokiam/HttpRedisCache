@@ -148,6 +148,7 @@ Build Status
 ------------
 [![Build Status](https://travis-ci.org/solilokiam/HttpRedisCache.png?branch=master)](https://travis-ci.org/solilokiam/HttpRedisCache)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/99d54861-3c70-4cd6-a73d-f1ce31aa8869/mini.png)](https://insight.sensiolabs.com/projects/99d54861-3c70-4cd6-a73d-f1ce31aa8869)
+[![Latest Stable Version](https://poser.pugx.org/solilokiam/httprediscache/v/stable.png)](https://packagist.org/packages/solilokiam/httprediscache) [![Total Downloads](https://poser.pugx.org/solilokiam/httprediscache/downloads.png)](https://packagist.org/packages/solilokiam/httprediscache) [![Latest Unstable Version](https://poser.pugx.org/solilokiam/httprediscache/v/unstable.png)](https://packagist.org/packages/solilokiam/httprediscache) [![License](https://poser.pugx.org/solilokiam/httprediscache/license.png)](https://packagist.org/packages/solilokiam/httprediscache)
 
 
 Author
